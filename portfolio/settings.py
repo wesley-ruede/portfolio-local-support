@@ -117,6 +117,6 @@ MEDIA_URL = '/media/'
 
 #overwirte previous settings with it being at the end
 try:
-    from local_settings import * #import all local settings
+    from .local_settings import * #import all local settings
 except ImportError: #allow local_settings to not be found not found or if there is an error
     pass #pass and don't crash django 
